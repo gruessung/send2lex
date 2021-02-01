@@ -1,0 +1,7 @@
+version: "2"
+services:
+    send2lex:
+      build: .
+      #image: gruessung/send2lex:latest
+      env_file:
+        - .env

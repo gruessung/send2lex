@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-imap/php-imap": "^4.1",
+        "vlucas/phpdotenv": "^5.2"
+    }
+}
