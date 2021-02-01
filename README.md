@@ -3,8 +3,13 @@
 _PHP tool to automatically push mail attachments to LexOffice.de account_
 
 ### Information
-Do not use your daily-use imap account for forwarding!
+Do not use your daily-use IMAP account for forwarding!
 This script forwards all attachments to lexoffice.de.
+
+### Enterprise Support
+if you need any assistence to run this script, contact me under www.gruessung.eu
+
+I'll send you an offer for your company.
 
 ### Requirements
 * lexoffice.de Account
