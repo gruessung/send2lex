@@ -1,4 +1,4 @@
-#send2lex
+# send2lex
 
 _PHP tool to automatically push mail attachments to LexOffice.de account_
 
