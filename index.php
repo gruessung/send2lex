@@ -24,6 +24,8 @@ try {
     setEnvDefault('IMAP_PATH', false, '/imap/ssl');
     setEnvDefault('IMAP_FOLDER', false, 'INBOX');
     setEnvDefault('DELETE_MAIL', false, 'false');
+    setEnvDefault('MOVE_MAIL', false, 'false');
+    setEnvDefault('MOVE_MAIL_PATH', true, 'INBOX.Lexoffice');
 } catch (Exception $e) {
     die($e->getMessage().PHP_EOL);
 }
@@ -87,7 +89,10 @@ while (true) {
             $mailbox->deleteMail($mail->id);
             echo '[INFO] Mail gelöscht'.PHP_EOL;
             $mailbox->expungeDeletedMails();
-
+        }
+        if ($_ENV['MOVE_MAIL'] == 'true') {
+            $mailbox->moveMail($mail->id, $_ENV['MOVE_MAIL_PATH']);
+            echo '[INFO] Mail verschoben nach: '.$_ENV['MOVE_MAIL_PATH'].PHP_EOL;
         }
     }
 }
