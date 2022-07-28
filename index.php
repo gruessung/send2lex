@@ -87,12 +87,12 @@ while (true) {
 
         if ($_ENV['DELETE_MAIL'] == 'true') {
             $mailbox->deleteMail($mail->id);
-            echo '[INFO] Mail gelöscht'.PHP_EOL;
+            echo '[INFO] Mail deleted'.PHP_EOL;
             $mailbox->expungeDeletedMails();
         }
         if ($_ENV['MOVE_MAIL'] == 'true') {
             $mailbox->moveMail($mail->id, $_ENV['MOVE_MAIL_PATH']);
-            echo '[INFO] Mail verschoben nach: '.$_ENV['MOVE_MAIL_PATH'].PHP_EOL;
+            echo '[INFO] Mail moved to: '.$_ENV['MOVE_MAIL_PATH'].PHP_EOL;
         }
     }
 }
