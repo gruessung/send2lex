@@ -1,6 +1,6 @@
 # send2lex
 
-_PHP tool to automatically push mail attachments to LexOffice.de account_
+_PHP tool to automatically push mail attachments (PDF) to LexOffice.de account_
 
 ### Information
 Do not use your daily-use IMAP account for forwarding!
@@ -23,7 +23,7 @@ Grab your lexoffice.de API KEY on https://app.lexoffice.de/settings/#/public-api
 1. clone git repo   
 ```git clone https://github.com/gruessung/send2lex.git``` 
 
-2. copy .env.sample and adjust to your settigs
+2. copy .env.sample and adjust to your settings
 ``` mv .env.sample .env```
 
 3. start docker-compose 
