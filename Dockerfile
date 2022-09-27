@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y  git curl libc-client-dev libkrb5-dev libzip-dev  zip && rm -r /var/lib/apt/lists/*
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl 
 RUN docker-php-ext-install imap
-RUN docker-php-ext-configure zip --with-libzip
+RUN docker-php-ext-configure zip
 RUN docker-php-ext-install  zip
 
 
