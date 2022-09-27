@@ -19,6 +19,11 @@ I'll send you an offer for your company.
 
 Grab your lexoffice.de API KEY on https://app.lexoffice.de/settings/#/public-api
 
+#### deploy with image
+1. create your .env file
+2. ```docker run --name send2lex --env-file ./.env ghcr.io/gruessung/send2lex:main```
+
+
 #### build from source
 1. clone git repo   
 ```git clone https://github.com/gruessung/send2lex.git``` 
