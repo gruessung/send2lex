@@ -1,4 +1,4 @@
-FROM php:8
+FROM php:8.0
 
 RUN mkdir /app
 
